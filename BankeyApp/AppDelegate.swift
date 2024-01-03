@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #warning("TODO: UIScreen.main is deprecated you should look this later")
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginVC()
+        window?.rootViewController = OnboardContainerVC()
         /// OPTIONAL
         window?.backgroundColor = .systemBackground
 
