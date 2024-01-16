@@ -25,7 +25,7 @@ class LoginVC: UIViewController {
     private var password: String? {
         loginView.passwordTextField.text
     }
-    
+
     weak var delegate: LoginVCDelegate?
 
     override func viewDidLoad() {
@@ -119,6 +119,6 @@ extension LoginVC {
     }
 }
 
-//#Preview {
+// #Preview {
 //    LoginVC()
-//}
+// }

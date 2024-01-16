@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    let loginVC = LoginVC()
+    let onboardVC = OnboardContainerVC()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         #warning("TODO: UIScreen.main is deprecated you should look this later")
@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
 
-        loginVC.delegate = self
-        window?.rootViewController = loginVC
+        onboardVC.delegate = self
+        window?.rootViewController = onboardVC
         /// OPTIONAL
 
         return true
@@ -29,5 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: LoginVCDelegate {
     func didLogin() {
         print("Did login...")
+    }
+}
+
+extension AppDelegate: OnboardContainerVCDelegate {
+    func didFinishOnboarding() {
+        print("Did finish onboarding...")
     }
 }
