@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LoginVCDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginVC: UIViewController {
     private let labelsView = LoginLabelsView()
     private let loginView = LoginView()
@@ -21,6 +25,8 @@ class LoginVC: UIViewController {
     private var password: String? {
         loginView.passwordTextField.text
     }
+    
+    weak var delegate: LoginVCDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +109,7 @@ extension LoginVC {
         } else {
             signInButton.configuration?.showsActivityIndicator = true
             errorMessageLabel.isHidden = true
+            delegate?.didLogin()
         }
     }
 
