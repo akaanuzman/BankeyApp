@@ -14,6 +14,7 @@
 		F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763452B439395001EC931 /* LoginLabelsView.swift */; };
 		F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */; };
 		F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */; };
+		F1DD95692B587749004BABBD /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD95682B587749004BABBD /* DummyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F14763452B439395001EC931 /* LoginLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabelsView.swift; sourceTree = "<group>"; };
 		F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardContainerVC.swift; sourceTree = "<group>"; };
 		F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
+		F1DD95682B587749004BABBD /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				F147632E2B436A64001EC931 /* LoginVC.swift */,
 				F14763432B4374EA001EC931 /* LoginView.swift */,
 				F14763452B439395001EC931 /* LoginLabelsView.swift */,
+				F1DD95682B587749004BABBD /* DummyVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				F14763442B4374EA001EC931 /* LoginView.swift in Sources */,
 				F147632F2B436A64001EC931 /* LoginVC.swift in Sources */,
+				F1DD95692B587749004BABBD /* DummyVC.swift in Sources */,
 				F147632B2B436A64001EC931 /* AppDelegate.swift in Sources */,
 				F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */,
 				F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */,

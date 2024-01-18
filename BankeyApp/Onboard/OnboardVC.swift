@@ -14,6 +14,8 @@ final class OnboardVC: UIViewController {
     private let stackView = UIStackView()
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
+    private let nextButton = UIButton(type: .system)
+    private let skipButton = UIButton(type: .system)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +63,7 @@ extension OnboardVC {
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(titleLabel)
         view.addSubview(stackView)
+        
         
         // Stack View Constraints
         NSLayoutConstraint.activate([

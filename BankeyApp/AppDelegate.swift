@@ -10,8 +10,9 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    let onboardVC = OnboardContainerVC()
-    let loginVC = LoginVC()
+    private let onboardVC = OnboardContainerVC()
+    private let loginVC = LoginVC()
+    private let dummyVC = DummyVC()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         #warning("TODO: UIScreen.main is deprecated you should look this later")
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         onboardVC.delegate = self
         loginVC.delegate = self
+        dummyVC.delegate = self
         window?.rootViewController = loginVC
         /// OPTIONAL
 
@@ -28,19 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension AppDelegate: LoginVCDelegate {
-    func didLogin() {
-        setRootViewController(onboardVC)
-    }
-}
-
-extension AppDelegate: OnboardContainerVCDelegate {
-    func didFinishOnboarding() {
-        print("Did finish onboarding...")
-    }
-}
-
 extension AppDelegate {
+    /// This method is used to set root view controller with smooth transition animation
+    /// - Parameters:
+    ///   - vc: Destination view controller
+    ///   - animated: If you want to animate the transition default value is [true]
     func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
         guard animated, let window = window else {
             self.window?.rootViewController = vc
@@ -57,5 +51,23 @@ extension AppDelegate {
             animations: nil,
             completion: nil
         )
+    }
+}
+
+extension AppDelegate: LoginVCDelegate {
+    func didLogin() {
+        setRootViewController(onboardVC)
+    }
+}
+
+extension AppDelegate: OnboardContainerVCDelegate {
+    func didFinishOnboarding() {
+        setRootViewController(dummyVC)
+    }
+}
+
+extension AppDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginVC)
     }
 }
