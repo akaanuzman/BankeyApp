@@ -12,6 +12,7 @@
 		F14763342B436A65001EC931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14763332B436A65001EC931 /* Assets.xcassets */; };
 		F14763442B4374EA001EC931 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763432B4374EA001EC931 /* LoginView.swift */; };
 		F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763452B439395001EC931 /* LoginLabelsView.swift */; };
+		F14EF05B2B59C90900ECD3EA /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EF05A2B59C90900ECD3EA /* LocalState.swift */; };
 		F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */; };
 		F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */; };
 		F1DD95692B587749004BABBD /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD95682B587749004BABBD /* DummyVC.swift */; };
@@ -25,6 +26,7 @@
 		F14763382B436A65001EC931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14763432B4374EA001EC931 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F14763452B439395001EC931 /* LoginLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabelsView.swift; sourceTree = "<group>"; };
+		F14EF05A2B59C90900ECD3EA /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardContainerVC.swift; sourceTree = "<group>"; };
 		F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
 		F1DD95682B587749004BABBD /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		F14763292B436A64001EC931 /* BankeyApp */ = {
 			isa = PBXGroup;
 			children = (
+				F14EF0592B59C8FD00ECD3EA /* Utils */,
 				F1A825872B45E91200AA5BD7 /* Onboard */,
 				F14763422B4374CB001EC931 /* Login */,
 				F147633E2B43747F001EC931 /* Files */,
@@ -86,6 +89,14 @@
 				F1DD95682B587749004BABBD /* DummyVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		F14EF0592B59C8FD00ECD3EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F14EF05A2B59C90900ECD3EA /* LocalState.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1A825872B45E91200AA5BD7 /* Onboard */ = {
@@ -173,6 +184,7 @@
 				F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */,
 				F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */,
 				F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */,
+				F14EF05B2B59C90900ECD3EA /* LocalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

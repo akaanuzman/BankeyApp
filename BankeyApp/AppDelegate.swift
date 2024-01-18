@@ -56,12 +56,17 @@ extension AppDelegate {
 
 extension AppDelegate: LoginVCDelegate {
     func didLogin() {
+        if LocalState.hasOnboarded {
+            setRootViewController(dummyVC)
+            return
+        }
         setRootViewController(onboardVC)
     }
 }
 
 extension AppDelegate: OnboardContainerVCDelegate {
     func didFinishOnboarding() {
+        LocalState.hasOnboarded = true
         setRootViewController(dummyVC)
     }
 }
