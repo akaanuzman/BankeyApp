@@ -13,6 +13,9 @@
 		F14763442B4374EA001EC931 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763432B4374EA001EC931 /* LoginView.swift */; };
 		F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763452B439395001EC931 /* LoginLabelsView.swift */; };
 		F14EF05B2B59C90900ECD3EA /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EF05A2B59C90900ECD3EA /* LocalState.swift */; };
+		F1A37DCC2B5B38CF00FC3A11 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DCB2B5B38CF00FC3A11 /* UIViewController+Utils.swift */; };
+		F1A37DCE2B5B3B7D00FC3A11 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DCD2B5B3B7D00FC3A11 /* MainViewController.swift */; };
+		F1A37DD12B5B3C6A00FC3A11 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DD02B5B3C6A00FC3A11 /* SFSymbols.swift */; };
 		F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */; };
 		F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */; };
 		F1DD95692B587749004BABBD /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD95682B587749004BABBD /* DummyVC.swift */; };
@@ -27,6 +30,9 @@
 		F14763432B4374EA001EC931 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F14763452B439395001EC931 /* LoginLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabelsView.swift; sourceTree = "<group>"; };
 		F14EF05A2B59C90900ECD3EA /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		F1A37DCB2B5B38CF00FC3A11 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		F1A37DCD2B5B3B7D00FC3A11 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F1A37DD02B5B3C6A00FC3A11 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardContainerVC.swift; sourceTree = "<group>"; };
 		F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
 		F1DD95682B587749004BABBD /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
@@ -62,11 +68,14 @@
 		F14763292B436A64001EC931 /* BankeyApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1A37DCF2B5B3C6000FC3A11 /* Constants */,
+				F1A37DCA2B5B38B700FC3A11 /* Extensions */,
 				F14EF0592B59C8FD00ECD3EA /* Utils */,
 				F1A825872B45E91200AA5BD7 /* Onboard */,
 				F14763422B4374CB001EC931 /* Login */,
 				F147633E2B43747F001EC931 /* Files */,
 				F147632A2B436A64001EC931 /* AppDelegate.swift */,
+				F1A37DCD2B5B3B7D00FC3A11 /* MainViewController.swift */,
 			);
 			path = BankeyApp;
 			sourceTree = "<group>";
@@ -97,6 +106,22 @@
 				F14EF05A2B59C90900ECD3EA /* LocalState.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F1A37DCA2B5B38B700FC3A11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1A37DCB2B5B38CF00FC3A11 /* UIViewController+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1A37DCF2B5B3C6000FC3A11 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F1A37DD02B5B3C6A00FC3A11 /* SFSymbols.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F1A825872B45E91200AA5BD7 /* Onboard */ = {
@@ -179,12 +204,15 @@
 			files = (
 				F14763442B4374EA001EC931 /* LoginView.swift in Sources */,
 				F147632F2B436A64001EC931 /* LoginVC.swift in Sources */,
+				F1A37DCC2B5B38CF00FC3A11 /* UIViewController+Utils.swift in Sources */,
+				F1A37DD12B5B3C6A00FC3A11 /* SFSymbols.swift in Sources */,
 				F1DD95692B587749004BABBD /* DummyVC.swift in Sources */,
 				F147632B2B436A64001EC931 /* AppDelegate.swift in Sources */,
 				F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */,
 				F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */,
 				F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */,
 				F14EF05B2B59C90900ECD3EA /* LocalState.swift in Sources */,
+				F1A37DCE2B5B3B7D00FC3A11 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
