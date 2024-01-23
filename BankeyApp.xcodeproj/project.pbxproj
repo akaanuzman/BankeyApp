@@ -18,6 +18,7 @@
 		F1A37DD12B5B3C6A00FC3A11 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DD02B5B3C6A00FC3A11 /* SFSymbols.swift */; };
 		F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */; };
 		F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */; };
+		F1B374AA2B605FF9003835F8 /* AccountSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */; };
 		F1DD95692B587749004BABBD /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD95682B587749004BABBD /* DummyVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		F1A37DD02B5B3C6A00FC3A11 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		F1A825882B45E92100AA5BD7 /* OnboardContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardContainerVC.swift; sourceTree = "<group>"; };
 		F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
+		F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryVC.swift; sourceTree = "<group>"; };
 		F1DD95682B587749004BABBD /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,11 +70,8 @@
 		F14763292B436A64001EC931 /* BankeyApp */ = {
 			isa = PBXGroup;
 			children = (
-				F1A37DCF2B5B3C6000FC3A11 /* Constants */,
-				F1A37DCA2B5B38B700FC3A11 /* Extensions */,
-				F14EF0592B59C8FD00ECD3EA /* Utils */,
-				F1A825872B45E91200AA5BD7 /* Onboard */,
-				F14763422B4374CB001EC931 /* Login */,
+				F1B374A72B605FDE003835F8 /* Features */,
+				F1B374A62B605FCB003835F8 /* Products */,
 				F147633E2B43747F001EC931 /* Files */,
 				F147632A2B436A64001EC931 /* AppDelegate.swift */,
 				F1A37DCD2B5B3B7D00FC3A11 /* MainVC.swift */,
@@ -131,6 +130,34 @@
 				F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */,
 			);
 			path = Onboard;
+			sourceTree = "<group>";
+		};
+		F1B374A62B605FCB003835F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14EF0592B59C8FD00ECD3EA /* Utils */,
+				F1A37DCF2B5B3C6000FC3A11 /* Constants */,
+				F1A37DCA2B5B38B700FC3A11 /* Extensions */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		F1B374A72B605FDE003835F8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F1B374A82B605FEB003835F8 /* AccountSummary */,
+				F14763422B4374CB001EC931 /* Login */,
+				F1A825872B45E91200AA5BD7 /* Onboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F1B374A82B605FEB003835F8 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +234,7 @@
 				F1A37DCC2B5B38CF00FC3A11 /* UIViewController+Utils.swift in Sources */,
 				F1A37DD12B5B3C6A00FC3A11 /* SFSymbols.swift in Sources */,
 				F1DD95692B587749004BABBD /* DummyVC.swift in Sources */,
+				F1B374AA2B605FF9003835F8 /* AccountSummaryVC.swift in Sources */,
 				F147632B2B436A64001EC931 /* AppDelegate.swift in Sources */,
 				F1A825892B45E92100AA5BD7 /* OnboardContainerVC.swift in Sources */,
 				F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */,
