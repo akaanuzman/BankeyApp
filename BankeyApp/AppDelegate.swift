@@ -15,17 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let onboardVC = OnboardContainerVC()
     private let loginVC = LoginVC()
     private let dummyVC = DummyVC()
+    private let mainVC = MainVC()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         #warning("TODO: UIScreen.main is deprecated you should look this later")
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-
+ 
         onboardVC.delegate = self
         loginVC.delegate = self
         dummyVC.delegate = self
-        window?.rootViewController = loginVC
+        window?.rootViewController = mainVC
         /// OPTIONAL
 
         return true
