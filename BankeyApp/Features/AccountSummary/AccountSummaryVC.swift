@@ -8,7 +8,7 @@
 import UIKit
 
 class AccountSummaryVC: UIViewController {
-    private let dummyData = ["ABC", "ABD", "ABE", "BBB", "AAA", "AAC"]
+    private let dummyData = ["ABC", "ABD", "ABE", "BBB", "AAA", "AAC", "ABC", "ABD", "ABE", "BBB", "AAA", "AAC", "ABC", "ABD", "ABE", "BBB", "AAA", "AAC", "ABC", "ABD", "ABE", "BBB", "AAA", "AAC", "ABC", "ABD", "ABE", "BBB", "AAA", "AAC"]
 
     private let tableView = UITableView()
 
@@ -21,6 +21,7 @@ class AccountSummaryVC: UIViewController {
 extension AccountSummaryVC {
     private func setup() {
         setupTableView()
+        setupTableHeaderView()
     }
 
     private func setupTableView() {
@@ -36,6 +37,16 @@ extension AccountSummaryVC {
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
+    }
+
+    private func setupTableHeaderView() {
+        let header = AccountSummaryHeaderView(frame: .zero)
+
+        var size = header.systemLayoutSizeFitting(UIView.layoutFittingExpandedSize)
+        size.width = UIScreen.main.bounds.width
+        header.frame.size = size
+
+        tableView.tableHeaderView = header
     }
 }
 
