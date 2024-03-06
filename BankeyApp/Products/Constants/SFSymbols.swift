@@ -12,4 +12,5 @@ enum SFSymbols: String {
     case account = "person.crop.circle"
     case moveMoney = "arrow.left.arrow.right"
     case more = "ellipsis.circle"
+    case chevronRight = "chevron.right"
 }

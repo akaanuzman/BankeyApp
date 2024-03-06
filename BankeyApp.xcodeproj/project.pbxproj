@@ -14,6 +14,7 @@
 		F14763342B436A65001EC931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14763332B436A65001EC931 /* Assets.xcassets */; };
 		F14763442B4374EA001EC931 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763432B4374EA001EC931 /* LoginView.swift */; };
 		F14763462B439395001EC931 /* LoginLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14763452B439395001EC931 /* LoginLabelsView.swift */; };
+		F14B34682B98ABDC0075D62F /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B34672B98ABDC0075D62F /* AccountSummaryCell.swift */; };
 		F14EF05B2B59C90900ECD3EA /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EF05A2B59C90900ECD3EA /* LocalState.swift */; };
 		F1A37DCC2B5B38CF00FC3A11 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DCB2B5B38CF00FC3A11 /* UIViewController+Utils.swift */; };
 		F1A37DCE2B5B3B7D00FC3A11 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A37DCD2B5B3B7D00FC3A11 /* MainVC.swift */; };
@@ -34,6 +35,7 @@
 		F14763382B436A65001EC931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14763432B4374EA001EC931 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F14763452B439395001EC931 /* LoginLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabelsView.swift; sourceTree = "<group>"; };
+		F14B34672B98ABDC0075D62F /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		F14EF05A2B59C90900ECD3EA /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		F1A37DCB2B5B38CF00FC3A11 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		F1A37DCD2B5B3B7D00FC3A11 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F14B34652B98ABAA0075D62F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F11763A62B606A770070B3C4 /* AccountSummaryHeaderView.swift */,
+				F11763A82B606A8C0070B3C4 /* AccountSummaryHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F14B34662B98ABC40075D62F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F14B34672B98ABDC0075D62F /* AccountSummaryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F14EF0592B59C8FD00ECD3EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */,
-				F11763A62B606A770070B3C4 /* AccountSummaryHeaderView.swift */,
-				F11763A82B606A8C0070B3C4 /* AccountSummaryHeaderView.xib */,
+				F14B34662B98ABC40075D62F /* Cell */,
+				F14B34652B98ABAA0075D62F /* Header */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -236,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14B34682B98ABDC0075D62F /* AccountSummaryCell.swift in Sources */,
 				F11763A72B606A770070B3C4 /* AccountSummaryHeaderView.swift in Sources */,
 				F14763442B4374EA001EC931 /* LoginView.swift in Sources */,
 				F147632F2B436A64001EC931 /* LoginVC.swift in Sources */,
