@@ -23,6 +23,7 @@
 		F1A8258D2B45E98A00AA5BD7 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */; };
 		F1B374AA2B605FF9003835F8 /* AccountSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */; };
 		F1DD95692B587749004BABBD /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD95682B587749004BABBD /* DummyVC.swift */; };
+		F1EDCEBD2BABC2270080A159 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EDCEBC2BABC2270080A159 /* CurrencyFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F1A8258C2B45E98A00AA5BD7 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
 		F1B374A92B605FF9003835F8 /* AccountSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryVC.swift; sourceTree = "<group>"; };
 		F1DD95682B587749004BABBD /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
+		F1EDCEBC2BABC2270080A159 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F14EF05A2B59C90900ECD3EA /* LocalState.swift */,
+				F1EDCEBC2BABC2270080A159 /* CurrencyFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				F11763A72B606A770070B3C4 /* AccountSummaryHeaderView.swift in Sources */,
 				F14763442B4374EA001EC931 /* LoginView.swift in Sources */,
 				F147632F2B436A64001EC931 /* LoginVC.swift in Sources */,
+				F1EDCEBD2BABC2270080A159 /* CurrencyFormatter.swift in Sources */,
 				F1A37DCC2B5B38CF00FC3A11 /* UIViewController+Utils.swift in Sources */,
 				F1A37DD12B5B3C6A00FC3A11 /* SFSymbols.swift in Sources */,
 				F1DD95692B587749004BABBD /* DummyVC.swift in Sources */,
