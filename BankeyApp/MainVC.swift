@@ -47,12 +47,12 @@ class MainVC: UITabBarController {
     }
 }
 
-class AccountSummaryVC: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemRed
-    }
-}
+//class AccountSummaryVC: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemRed
+//    }
+//}
 
 class MoveMoneyVC: UIViewController {
     override func viewDidLoad() {
