@@ -19,10 +19,10 @@ final class AccountSummaryCell: UITableViewCell {
         let accountType: AccoutType
         let accountName: String
         let balance: Decimal
-//
-//        var balanceAsAttiributedString: NSAttributedString {
-//            return CurrencyFormatter().makeFormattedBalance(balance: balance)
-//        }
+
+        var balanceAsAttiributedString: NSAttributedString {
+            return CurrencyFormatter().makeAttributedCurrency(balance)
+        }
     }
 
     let typeLabel = UILabel()
@@ -140,7 +140,7 @@ extension AccountSummaryCell {
     func configure(with viewModel: ViewModel) {
         typeLabel.text = viewModel.accountType.rawValue
         nameLabel.text = viewModel.accountName
-        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: "929,292", cents: "29")
+        balanceAmountLabel.attributedText = viewModel.balanceAsAttiributedString
 
         switch viewModel.accountType {
         case .Banking:
