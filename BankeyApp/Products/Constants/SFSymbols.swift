@@ -13,4 +13,6 @@ enum SFSymbols: String {
     case moveMoney = "arrow.left.arrow.right"
     case more = "ellipsis.circle"
     case chevronRight = "chevron.right"
+    case eyeFill = "eye.fill"
+    case eyeSlash = "eye.slash"
 }

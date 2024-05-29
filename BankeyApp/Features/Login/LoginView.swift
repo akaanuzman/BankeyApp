@@ -49,6 +49,7 @@ extension LoginView {
         passwordTextField.placeholder = passwordTextFieldPlaceHolder
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self
+        passwordTextField.enablePasswordToggle()
     }
 
     private func layout() {

@@ -5,7 +5,7 @@
 //  Created by Kaan Uzman on 22/3/24.
 //
 import XCTest
-
+//
 @testable import BankeyApp
 
 class Test: XCTestCase {
